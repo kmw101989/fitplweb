@@ -1,0 +1,71 @@
+# netlify.toml  (리포 루트)
+[build]
+  command = ""                 # 빌드 과정이 없으면 빈 값/생략
+  publish = "."                # 루트 전체를 배포해서 하위 폴더들을 그대로 노출
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# --- 메인 랜딩: /  -> mainpage-website/index.html
+[[redirects]]
+  from = "/"
+  to = "/mainpage-website/index.html"
+  status = 200
+
+# --- 개별 섹션: 정적 파일 직접 제공
+#    SPA면 index.html로 고정 라우팅(200) / 정적만이면 301/200 혼합 가능
+
+# /ranking ... (SPA 라우팅 가정)
+[[redirects]]
+  from = "/ranking"
+  to = "/ranking/index.html"
+  status = 200
+[[redirects]]
+  from = "/ranking/*"
+  to = "/ranking/index.html"
+  status = 200
+
+# /sale ...
+[[redirects]]
+  from = "/sale"
+  to = "/sale/index.html"
+  status = 200
+[[redirects]]
+  from = "/sale/*"
+  to = "/sale/index.html"
+  status = 200
+
+# /Detail ...
+[[redirects]]
+  from = "/Detail"
+  to = "/Detail/index.html"
+  status = 200
+[[redirects]]
+  from = "/Detail/*"
+  to = "/Detail/index.html"
+  status = 200
+
+# /Detailpage ...
+[[redirects]]
+  from = "/Detailpage"
+  to = "/Detailpage/index.html"
+  status = 200
+[[redirects]]
+  from = "/Detailpage/*"
+  to = "/Detailpage/index.html"
+  status = 200
+
+# /cart ...
+[[redirects]]
+  from = "/cart"
+  to = "/cart/index.html"
+  status = 200
+[[redirects]]
+  from = "/cart/*"
+  to = "/cart/index.html"
+  status = 200
+
+# --- 서버리스 API (예: /.netlify/functions/hello)
+# 별도 설정 불필요. netlify/functions/hello.mjs 파일만 있으면
+# /.netlify/functions/hello 로 자동 라우팅됨.
