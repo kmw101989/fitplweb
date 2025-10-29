@@ -182,7 +182,7 @@ class LoginHandler {
   setupEventListeners() {
     this.loginButton.addEventListener("click", () => {
       // FITPL 페이지로 이동
-      window.location.href = "../fitpl-website/index.html";
+      window.location.href = "/fitpl-website/";
     });
   }
 
