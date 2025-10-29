@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문서 - 무신사</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="payment-container">
+      <!-- Top Bar -->
+      <div class="topbar">
+        <div class="topbar-background">
+          <div class="topbar-container">
+            <div class="topbar-left">
+              <div class="margin-divider"></div>
+              <div class="nav-links">
+                <a href="#" class="nav-link">MUSINSA</a>
+                <a href="#" class="nav-link">BEAUTY</a>
+                <a href="#" class="nav-link">PLAYER</a>
+                <a href="#" class="nav-link">OUTLET</a>
+                <a href="#" class="nav-link">BOUTIQUE</a>
+                <a href="#" class="nav-link">SHOES</a>
+                <a href="#" class="nav-link">KIDS</a>
+                <a href="#" class="nav-link">USED</a>
+                <a href="../fitpl-website/index.html" class="nav-link">FITPL</a>
+              </div>
+              <div class="margin-divider"></div>
+              <div class="snap-link">
+                <div class="snap-icon"></div>
+                <span>SNAP</span>
+              </div>
+            </div>
+            <div class="category-menu-btn"></div>
+            <div class="topbar-right">
+              <div class="store-link">
+                <span>오프라인 스토어</span>
+                <div class="margin-divider"></div>
+              </div>
+              <div class="search-btn">
+                <svg
+                  class="search-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 14L11.1 11.1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>검색</span>
+              </div>
+              <div class="like-link">
+                <svg
+                  class="like-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M8.00004 14.6667C7.33337 14.6667 6.66671 14.3333 6.00004 13.6667C2.66671 10.3333 0.666707 8.33333 0.666707 5.66667C0.666707 3.66667 2.33337 2 4.33337 2C5.33337 2 6.33337 2.5 7.00004 3.33333C7.66671 2.5 8.66671 2 9.66671 2C11.6667 2 13.3334 3.66667 13.3334 5.66667C13.3334 8.33333 11.3334 10.3333 8.00004 13.6667C7.33337 14.3333 6.66671 14.6667 8.00004 14.6667Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>좋아요</span>
+              </div>
+              <div class="my-link">
+                <svg
+                  class="my-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M8 8C9.65685 8 11 6.65685 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.65685 6.34315 8 8 8Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 14C2 11.7909 3.79086 10 6 10H10C12.2091 10 14 11.7909 14 14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>마이</span>
+              </div>
+              <div class="cart-link">
+                <svg
+                  class="cart-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M2.66667 2.66667H3.33333L4.66667 10.6667H12L13.3333 4H4.66667"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="5.33333"
+                    cy="12"
+                    r="1.33333"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="11.3333"
+                    cy="12"
+                    r="1.33333"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span>장바구니</span>
+              </div>
+              <div class="logout-btn">
+                <span>FITPL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-divider"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="main-container">
+          <div class="main-wrapper">
+            <!-- Delivery Info Section -->
+            <div class="delivery-section">
+              <div class="delivery-header">
+                <h3 class="delivery-name">김민우</h3>
+                <div class="default-address-badge">
+                  <span>기본 배송지</span>
+                </div>
+                <button class="change-address-btn">배송지 변경</button>
+              </div>
+              <div class="delivery-info">
+                <div class="address">
+                  경기도 용인시 수지구 상현동 869-0 만현마을9단지엘지자이아파트
+                  910동 901호
+                </div>
+                <div class="phone">010-2101-4961</div>
+                <div class="delivery-request">
+                  <input
+                    type="text"
+                    placeholder="배송 요청사항을 선택해주세요"
+                    class="delivery-input"
+                  />
+                  <button class="close-btn"></button>
+                </div>
+              </div>
+              <div class="horizontal-divider"></div>
+            </div>
+
+            <!-- Order Items Section -->
+            <div class="order-items-section">
+              <h3 class="section-title">주문 상품 1개</h3>
+              <div class="order-items-container">
+                <div class="order-item">
+                  <div class="item-image">
+                    <div class="image-placeholder"></div>
+                  </div>
+                  <div class="item-info">
+                    <div class="brand">밴웍스</div>
+                    <div class="product-name">
+                      BALANCE TYPO 롱슬리브 (VLS0074) 블랙
+                    </div>
+                    <div class="size-info">L / 1개</div>
+                    <div class="price-info">
+                      <span class="original-price">33,900원</span>
+                      <span class="sale-price">29,400원</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-date">
+                  <span>10.13(월) 도착 예정</span>
+                  <button class="close-btn"></button>
+                </div>
+                <button class="coupon-btn">
+                  FitPl 런칭 기념 20% 쿠폰 적용
+                </button>
+              </div>
+
+              <!-- Snap Link Components -->
+              <h3 class="snap-title">유사한 상품을 활용한 스냅 코디</h3>
+              <div class="snap-components-container">
+                <div class="snap-link-component">
+                  <div class="snap-link-container">
+                    <div class="snap-image-container">
+                      <img
+                        src="http://localhost:3845/assets/0a18c4329a7deff96b97efefd98de20b98ff4157.png"
+                        alt="스냅 이미지"
+                        class="snap-image"
+                      />
+                      <div class="snap-overlay"></div>
+                      <div class="snap-like-btn">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 18.3333C8.33333 18.3333 6.66667 18 5 17.3333C1.66667 14 0 12 0 9.33333C0 7.33333 1.66667 5.66667 3.66667 5.66667C4.66667 5.66667 5.66667 6.16667 6.33333 7C7 6.16667 8 5.66667 9 5.66667C11 5.66667 12.6667 7.33333 12.6667 9.33333C12.6667 12 10.6667 14 7.33333 17.3333C8 18 6.66667 18.3333 10 18.3333Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="snap-info">
+                      <div class="snap-profile">
+                        <img
+                          src="http://localhost:3845/assets/4ee8248ddba267edc982b3fa356276b49cc4fa0f.png"
+                          alt="신명월 프로필"
+                          class="profile-image"
+                        />
+                        <span class="profile-name">신명월</span>
+                      </div>
+                      <div class="snap-details">
+                        <span class="user-info">168cm/50kg</span>
+                        <div class="divider"></div>
+                        <span class="product-info"
+                          >[PB]PALE BLUE, M[095] 착용</span
+                        >
+                      </div>
+                      <div class="snap-stats">
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1L7.5 4.5H11L8.5 7L9.5 10.5L6 8.5L2.5 10.5L3.5 7L1 4.5H4.5L6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">44</span>
+                        </div>
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1C6.55228 1 7 1.44772 7 2V3H9C9.55228 3 10 3.44772 10 4V9C10 9.55228 9.55228 10 9 10H3C2.44772 10 2 9.55228 2 9V4C2 3.44772 2.44772 3 3 3H5V2C5 1.44772 5.44772 1 6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="snap-link-component">
+                  <div class="snap-link-container">
+                    <div class="snap-image-container">
+                      <img
+                        src="http://localhost:3845/assets/0a18c4329a7deff96b97efefd98de20b98ff4157.png"
+                        alt="스냅 이미지"
+                        class="snap-image"
+                      />
+                      <div class="snap-overlay"></div>
+                      <div class="snap-like-btn">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 18.3333C8.33333 18.3333 6.66667 18 5 17.3333C1.66667 14 0 12 0 9.33333C0 7.33333 1.66667 5.66667 3.66667 5.66667C4.66667 5.66667 5.66667 6.16667 6.33333 7C7 6.16667 8 5.66667 9 5.66667C11 5.66667 12.6667 7.33333 12.6667 9.33333C12.6667 12 10.6667 14 7.33333 17.3333C8 18 6.66667 18.3333 10 18.3333Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="snap-info">
+                      <div class="snap-profile">
+                        <img
+                          src="http://localhost:3845/assets/4ee8248ddba267edc982b3fa356276b49cc4fa0f.png"
+                          alt="김민지 프로필"
+                          class="profile-image"
+                        />
+                        <span class="profile-name">김민지</span>
+                      </div>
+                      <div class="snap-details">
+                        <span class="user-info">165cm/48kg</span>
+                        <div class="divider"></div>
+                        <span class="product-info"
+                          >[BLACK]BLACK, S[085] 착용</span
+                        >
+                      </div>
+                      <div class="snap-stats">
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1L7.5 4.5H11L8.5 7L9.5 10.5L6 8.5L2.5 10.5L3.5 7L1 4.5H4.5L6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">32</span>
+                        </div>
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1C6.55228 1 7 1.44772 7 2V3H9C9.55228 3 10 3.44772 10 4V9C10 9.55228 9.55228 10 9 10H3C2.44772 10 2 9.55228 2 9V4C2 3.44772 2.44772 3 3 3H5V2C5 1.44772 5.44772 1 6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">3</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="snap-link-component">
+                  <div class="snap-link-container">
+                    <div class="snap-image-container">
+                      <img
+                        src="http://localhost:3845/assets/0a18c4329a7deff96b97efefd98de20b98ff4157.png"
+                        alt="스냅 이미지"
+                        class="snap-image"
+                      />
+                      <div class="snap-overlay"></div>
+                      <div class="snap-like-btn">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 18.3333C8.33333 18.3333 6.66667 18 5 17.3333C1.66667 14 0 12 0 9.33333C0 7.33333 1.66667 5.66667 3.66667 5.66667C4.66667 5.66667 5.66667 6.16667 6.33333 7C7 6.16667 8 5.66667 9 5.66667C11 5.66667 12.6667 7.33333 12.6667 9.33333C12.6667 12 10.6667 14 7.33333 17.3333C8 18 6.66667 18.3333 10 18.3333Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="snap-info">
+                      <div class="snap-profile">
+                        <img
+                          src="http://localhost:3845/assets/4ee8248ddba267edc982b3fa356276b49cc4fa0f.png"
+                          alt="신명월 프로필"
+                          class="profile-image"
+                        />
+                        <span class="profile-name">신명월</span>
+                      </div>
+                      <div class="snap-details">
+                        <span class="user-info">168cm/50kg</span>
+                        <div class="divider"></div>
+                        <span class="product-info"
+                          >[PB]PALE BLUE, M[095] 착용</span
+                        >
+                      </div>
+                      <div class="snap-stats">
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1L7.5 4.5H11L8.5 7L9.5 10.5L6 8.5L2.5 10.5L3.5 7L1 4.5H4.5L6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">44</span>
+                        </div>
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1C6.55228 1 7 1.44772 7 2V3H9C9.55228 3 10 3.44772 10 4V9C10 9.55228 9.55228 10 9 10H3C2.44772 10 2 9.55228 2 9V4C2 3.44772 2.44772 3 3 3H5V2C5 1.44772 5.44772 1 6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="snap-link-component">
+                  <div class="snap-link-container">
+                    <div class="snap-image-container">
+                      <img
+                        src="http://localhost:3845/assets/0a18c4329a7deff96b97efefd98de20b98ff4157.png"
+                        alt="스냅 이미지"
+                        class="snap-image"
+                      />
+                      <div class="snap-overlay"></div>
+                      <div class="snap-like-btn">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10 18.3333C8.33333 18.3333 6.66667 18 5 17.3333C1.66667 14 0 12 0 9.33333C0 7.33333 1.66667 5.66667 3.66667 5.66667C4.66667 5.66667 5.66667 6.16667 6.33333 7C7 6.16667 8 5.66667 9 5.66667C11 5.66667 12.6667 7.33333 12.6667 9.33333C12.6667 12 10.6667 14 7.33333 17.3333C8 18 6.66667 18.3333 10 18.3333Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="snap-info">
+                      <div class="snap-profile">
+                        <img
+                          src="http://localhost:3845/assets/4ee8248ddba267edc982b3fa356276b49cc4fa0f.png"
+                          alt="신명월 프로필"
+                          class="profile-image"
+                        />
+                        <span class="profile-name">신명월</span>
+                      </div>
+                      <div class="snap-details">
+                        <span class="user-info">168cm/50kg</span>
+                        <div class="divider"></div>
+                        <span class="product-info"
+                          >[PB]PALE BLUE, M[095] 착용</span
+                        >
+                      </div>
+                      <div class="snap-stats">
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1L7.5 4.5H11L8.5 7L9.5 10.5L6 8.5L2.5 10.5L3.5 7L1 4.5H4.5L6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">44</span>
+                        </div>
+                        <div class="stat-item">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M6 1C6.55228 1 7 1.44772 7 2V3H9C9.55228 3 10 3.44772 10 4V9C10 9.55228 9.55228 10 9 10H3C2.44772 10 2 9.55228 2 9V4C2 3.44772 2.44772 3 3 3H5V2C5 1.44772 5.44772 1 6 1Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                          <span class="stat-count">1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="horizontal-divider"></div>
+            </div>
+          </div>
+
+          <!-- Payment Summary Sidebar -->
+          <div class="payment-summary">
+            <div class="summary-section">
+              <h3 class="summary-title">결제 금액</h3>
+              <div class="summary-item">
+                <span>상품 금액</span>
+                <span>33,900원</span>
+              </div>
+              <div class="summary-item">
+                <span>할인 금액</span>
+                <span class="discount">-4,500원</span>
+              </div>
+              <div class="summary-item">
+                <span>배송비</span>
+                <span class="free">무료배송</span>
+              </div>
+              <div class="total-payment">
+                <span>총 결제 금액</span>
+                <div class="total-amount">
+                  <span class="discount-percent">13%</span>
+                  <span class="total-price">29,400원</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits-section">
+              <div class="section-header">
+                <h3 class="summary-title">적립 혜택</h3>
+                <button class="info-btn"></button>
+              </div>
+              <div class="benefit-item">
+                <span>등급 적립</span>
+                <span>LV.2 프렌즈 등급부터 가능</span>
+              </div>
+              <div class="benefit-item">
+                <span>후기 적립</span>
+                <span>최대 1,500원</span>
+              </div>
+              <div class="total-benefit">
+                <span>총 적립 금액</span>
+                <span>1,500원</span>
+              </div>
+              <div class="horizontal-divider"></div>
+              <div class="order-benefit">
+                <span>이번 주문으로 받을 혜택</span>
+                <button class="info-btn"></button>
+                <span class="benefit-amount">8,000원</span>
+              </div>
+            </div>
+
+            <div class="agreement-section">
+              <div class="horizontal-divider"></div>
+              <div class="agreement-item">
+                <span>주문 내용을 확인했으며 결제에 동의합니다.</span>
+                <button class="detail-btn">자세히</button>
+              </div>
+              <div class="agreement-item">
+                <span>회원님의 개인정보는 안전하게 관리됩니다.</span>
+                <button class="detail-btn">자세히</button>
+              </div>
+              <div class="legal-notice">
+                <p>
+                  무신사는 통신판매중개자로, 업체 배송 상품의 상품/상품정보/
+                </p>
+                <p>거래 등에 대한 책임은 무신사가 아닌 판매자에게 있습니다.</p>
+              </div>
+            </div>
+
+            <div class="payment-section">
+              <div class="payment-type-info">
+                <span>카드 결제</span>
+                <span class="benefit-text">최대 1,500원 적립</span>
+              </div>
+              <button class="payment-btn">29,400원 결제하기</button>
+              <button class="continue-shopping-btn">계속 쇼핑하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

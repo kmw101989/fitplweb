@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITPL - 여행 스타일링 플랫폼</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- TopBar -->
+      <div class="topbar">
+        <div class="topbar-content">
+          <div class="topbar-left">
+            <button class="menu-button">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect x="4" y="6" width="20" height="2" fill="white" />
+                <rect x="4" y="13" width="20" height="2" fill="white" />
+                <rect x="4" y="20" width="20" height="2" fill="white" />
+              </svg>
+            </button>
+            <div class="nav-links">
+              <a href="#" class="nav-link">MUSINSA</a>
+              <a href="#" class="nav-link">BEAUTY</a>
+              <a href="#" class="nav-link">PLAYER</a>
+              <a href="#" class="nav-link">OUTLET</a>
+              <a href="#" class="nav-link">BOUTIQUE</a>
+              <a href="#" class="nav-link">SHOES</a>
+              <a href="#" class="nav-link">KIDS</a>
+              <a href="#" class="nav-link">USED</a>
+              <a href="../fitpl-website/index.html" class="nav-link">FITPL</a>
+              <span class="nav-separator">|</span>
+              <a href="#" class="nav-link">(S) SNAP</a>
+            </div>
+          </div>
+          <div class="topbar-right">
+            <a href="#" class="topbar-link">오프라인 스토어</a>
+            <span class="topbar-separator">|</span>
+            <a href="#" class="topbar-link">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle
+                  cx="6.5"
+                  cy="6.5"
+                  r="5"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M10 10L14 14"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              검색
+            </a>
+            <a href="#" class="topbar-link">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M8 14L2 8C0.5 6.5 0.5 4 2 2.5C3.5 1 6 1 7.5 2.5L8 3L8.5 2.5C10 1 12.5 1 14 2.5C15.5 4 15.5 6.5 14 8L8 14Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              좋아요
+            </a>
+            <a href="#" class="topbar-link">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="5" r="3" stroke="white" stroke-width="1.5" />
+                <path
+                  d="M2 14C2 11 4.5 9 8 9C11.5 9 14 11 14 14"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              마이
+            </a>
+            <a href="#" class="topbar-link">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 3H13L12 13H4L3 3Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 3V2C5 1.5 5.5 1 6 1H10C10.5 1 11 1.5 11 2V3"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              장바구니
+            </a>
+            <button class="login-button">FITPL</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MusinsaLogoBar -->
+      <div class="logo-bar">
+        <div class="logo-bar-content">
+          <div class="logo-section">
+            <div class="logo">MUSINSA</div>
+          </div>
+          <div class="notification-section">
+            <button class="notification-button">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M14 2C10.134 2 7 5.134 7 9V13L5 17H23L21 13V9C21 5.134 17.866 2 14 2Z"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <path d="M10 21H18" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SearchBar -->
+      <div class="search-bar">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="여행지를 검색해 보세요."
+            class="search-input"
+          />
+          <button class="search-button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
+                stroke="#8A8A8A"
+                stroke-width="2"
+              />
+              <path d="M19 19L14.65 14.65" stroke="#8A8A8A" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Background Navigation -->
+      <div class="nav-background">
+        <div class="nav-content">
+          <a href="#" class="nav-item active">추천</a>
+          <a href="#" class="nav-item">랭킹</a>
+          <a href="#" class="nav-item">세일</a>
+          <a href="#" class="nav-item">테마/컬렉션</a>
+          <a href="#" class="nav-item">기획전</a>
+        </div>
+      </div>
+
+      <!-- Main Banner Section -->
+      <div class="banner-section">
+        <div class="banner-container">
+          <!-- Page 1: 여행지 배너들 -->
+          <div class="banner-page">
+            <div class="banner-item">
+              <div class="banner-image banner-1">
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>지금<br />많이 떠나는 여행지</h2>
+                    <p>일본 - 후쿠오카</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <div class="banner-image banner-2">
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>여행자들이<br />사랑하는 도시</h2>
+                    <p>대만 - 타이베이</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <div class="banner-image banner-3">
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>OOTD가 빛나는<br />여행스팟</h2>
+                    <p>미국 - 괌</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 2: 프로모션 배너들 -->
+          <div class="banner-page">
+            <div class="banner-item">
+              <div class="banner-image banner-4">
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>첫 구매 한정<br />20% 쿠폰</h2>
+                    <p>990원부터 첫구매 인기 상품까지</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <div class="banner-image banner-5">
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>HOLIDAY<br />BIG SALE</h2>
+                    <p>09.26 - 10.09 | UP TO 80%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <div class="banner-image banner-6">
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>추석 빅세일<br />잡화 브랜드위크</h2>
+                    <p>잔스포츠, 타입서비스 외 최대 80% 할인</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 3: 여행 코디/지역 추천 -->
+          <div class="banner-page">
+            <div class="banner-item">
+              <div class="banner-image banner-7">
+                <div class="banner-badge">여행 코디</div>
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>2주 베타서비스 혜택<br />30% 쿠폰</h2>
+                    <p>일본 - 후쿠오카</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <div class="banner-image banner-8">
+                <div class="banner-badge">지역 추천</div>
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>여행 준비도,<br />쇼핑 혜택도 한번에</h2>
+                    <p>베트남 - 다낭</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-item">
+              <div class="banner-image banner-9">
+                <div class="banner-badge">여행 코디</div>
+                <div class="banner-overlay">
+                  <div class="banner-content">
+                    <h2>적립금 받고<br />로컬 무드까지 챙기자</h2>
+                    <p>대만 - 타이베이</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-controls">
+          <button class="banner-prev">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="20" fill="#F5F5F5" />
+              <path d="M24 12L16 20L24 28" stroke="#000" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="banner-next">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="20" fill="#F5F5F5" />
+              <path d="M16 12L24 20L16 28" stroke="#000" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+        <div class="banner-indicators">
+          <span class="indicator active" data-page="0"></span>
+          <span class="indicator" data-page="1"></span>
+          <span class="indicator" data-page="2"></span>
+        </div>
+      </div>
+
+      <!-- Card Section -->
+      <div class="card-section">
+        <!-- Top Row Cards -->
+        <div class="card-row top-row">
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="에잇세컨즈데이"
+              />
+            </div>
+            <div class="card-text">에잇세컨즈데이</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="뉴발란스데이"
+              />
+            </div>
+            <div class="card-text">뉴발란스데이</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="B.B × 핏더사이즈"
+              />
+            </div>
+            <div class="card-text">B.B × 핏더사이즈</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="월간 랭킹"
+              />
+            </div>
+            <div class="card-text">월간 랭킹</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="아메스 × QWER"
+              />
+            </div>
+            <div class="card-text">아메스 × QWER</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="아웃스탠딩 10주년 컬렉션"
+              />
+            </div>
+            <div class="card-text">아웃스탠딩 10주년 컬렉션</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                alt="KBO 볼파크 에디션 v2"
+              />
+            </div>
+            <div class="card-text">KBO 볼파크 에디션 v2</div>
+          </div>
+          <div class="card top-card">
+            <div class="card-image">
+              <div class="discount-badge">20%</div>
+            </div>
+            <div class="card-text">오직 무신사 뷰티 쿠폰</div>
+          </div>
+        </div>
+
+        <!-- Bottom Row Cards -->
+        <div class="card-row bottom-row">
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"
+                  fill="#FFA500"
+                />
+              </svg>
+            </div>
+            <div class="card-text">중고 20% 할인</div>
+          </div>
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                  fill="#8B4513"
+                />
+              </svg>
+            </div>
+            <div class="card-text">최저가 보상제</div>
+          </div>
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" fill="#000" />
+                <text
+                  x="12"
+                  y="16"
+                  text-anchor="middle"
+                  fill="white"
+                  font-size="12"
+                  font-weight="bold"
+                >
+                  M
+                </text>
+              </svg>
+            </div>
+            <div class="card-text">최대 8% 적립</div>
+          </div>
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+            <div class="card-text">랜덤 뽑기</div>
+          </div>
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="2" />
+                <path d="M12 6V12L16 14" stroke="#000" stroke-width="2" />
+              </svg>
+            </div>
+            <div class="card-text">타임세일</div>
+          </div>
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M23 19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V5C1 3.9 1.9 3 3 3H21C22.1 3 23 3.9 23 5V19Z"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+                <circle cx="12" cy="12" r="3" stroke="#000" stroke-width="2" />
+              </svg>
+            </div>
+            <div class="card-text">라이브</div>
+          </div>
+          <div class="card bottom-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                  fill="#000080"
+                />
+              </svg>
+            </div>
+            <div class="card-text">체험단</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Container -->
+      <div class="product-container">
+        <div class="product-header">
+          <h3 class="product-title">운동 카테고리별 추천 아이템: 피트니스</h3>
+          <button class="see-more-btn">더보기</button>
+        </div>
+        <div class="product-grid-container">
+          <button class="scroll-btn scroll-left" id="scrollLeft">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="product-grid" id="productGrid">
+            <!-- First Row -->
+            <div class="product-row">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="E.T.U 택티컬 자이언트핏 숏 슬리브"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">에이치덱스</div>
+                  <div class="product-name">
+                    E.T.U 택티컬 자이언트핏 숏 슬리브 (Black)
+                  </div>
+                  <div class="price">59,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="B LOGO MUSCLE FIT T-SHIRTS"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">본투윈</div>
+                  <div class="product-name">
+                    B LOGO MUSCLE FIT T-SHIRTS [CHARCOAL]
+                  </div>
+                  <div class="price">
+                    <span class="discount">20%</span>
+                    <span class="price-value">35,000원</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="트랙 라인 집업 저지 자켓"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                  <div class="color-options">
+                    <div
+                      class="color-swatch"
+                      style="background-color: #1e3a8a"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #6b7280"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #8b4513"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #000000"
+                    ></div>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <div class="brand">드릭스</div>
+                  <div class="product-name">
+                    트랙 라인 집업 저지 자켓_4color
+                  </div>
+                  <div class="price">
+                    <span class="discount">27%</span>
+                    <span class="price-value">49,900원</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="백 프린팅 후드집업"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                  <div class="color-options">
+                    <div
+                      class="color-swatch"
+                      style="
+                        background-color: #ffffff;
+                        border: 1px solid #e5e5e5;
+                      "
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #000000"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #6b7280"
+                    ></div>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <div class="brand">프리덤</div>
+                  <div class="product-name">백 프린팅 후드집업_3color</div>
+                  <div class="price">102,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="P2500 사이드 핀턱 와이드팬츠"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">피지컬가먼츠</div>
+                  <div class="product-name">
+                    P2500 사이드 핀턱 와이드팬츠 [3COLOR]
+                  </div>
+                  <div class="price">
+                    <span class="discount">30%</span>
+                    <span class="price-value">49,000원</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="짐 보스턴 백"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">무신사 스탠다드 스포츠</div>
+                  <div class="product-name">짐 보스턴 백 [블랙]</div>
+                  <div class="price">
+                    <span class="discount">10%</span>
+                    <span class="price-value">68,310원</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional cards for first row -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="추가 제품 1"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">추가 제품 1</div>
+                  <div class="price">45,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="추가 제품 2"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">추가 제품 2</div>
+                  <div class="price">32,000원</div>
+                </div>
+              </div>
+
+              <!-- Additional cards for first row to reach 15 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 9"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 9</div>
+                  <div class="price">44,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 10"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 10</div>
+                  <div class="price">51,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 11"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 11</div>
+                  <div class="price">47,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 12"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 12</div>
+                  <div class="price">43,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 13"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 13</div>
+                  <div class="price">56,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 14"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 14</div>
+                  <div class="price">49,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="첫번째 줄 제품 15"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">첫번째 줄 제품 15</div>
+                  <div class="price">53,000원</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="product-row">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 1"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 1</div>
+                  <div class="price">55,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 2"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 2</div>
+                  <div class="price">38,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 3"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 3</div>
+                  <div class="price">42,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 4"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 4</div>
+                  <div class="price">67,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-7a8ca5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 5"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 5</div>
+                  <div class="price">29,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 6"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 6</div>
+                  <div class="price">51,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 7"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 7</div>
+                  <div class="price">73,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 8"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 8</div>
+                  <div class="price">36,000원</div>
+                </div>
+              </div>
+
+              <!-- Additional cards for second row to reach 15 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 9"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 9</div>
+                  <div class="price">42,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 10"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 10</div>
+                  <div class="price">38,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 11"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 11</div>
+                  <div class="price">45,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 12"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 12</div>
+                  <div class="price">52,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 13"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 13</div>
+                  <div class="price">48,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 14"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 14</div>
+                  <div class="price">41,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="두번째 줄 제품 15"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">브랜드명</div>
+                  <div class="product-name">두번째 줄 제품 15</div>
+                  <div class="price">39,000원</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="scroll-btn scroll-right" id="scrollRight">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Section Divider -->
+        <div class="section-divider">
+          <div class="divider-content">
+            <div class="divider-text">무신사 플레이어에서 더보기</div>
+            <div class="divider-icon">P</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minimal Style Brand Recommendation Section -->
+      <div class="product-container">
+        <div class="product-header">
+          <h3 class="product-title">미니멀 스타일 브랜드 추천</h3>
+          <button class="see-more-btn">더보기</button>
+        </div>
+        <div class="product-grid-container">
+          <button class="scroll-btn scroll-left" id="scrollLeft2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="product-grid" id="productGrid2">
+            <!-- First Row -->
+            <div class="product-row">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="코튼 커브드 워시드 블루종 자켓"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">커스텀어클락</div>
+                  <div class="product-name">
+                    코튼 커브드 워시드 블루종 자켓 브라운
+                  </div>
+                  <div class="price">89,600원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 버튼 라운드넥 가디건"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                  <div class="color-options">
+                    <div
+                      class="color-swatch"
+                      style="background-color: #dc2626"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #f3f4f6"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #9ca3af"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #374151"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #000000"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #1e3a8a"
+                    ></div>
+                    <div
+                      class="color-swatch"
+                      style="background-color: #1e40af"
+                    ></div>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <div class="brand">엑스컨테이너</div>
+                  <div class="product-name">
+                    미니멀 버튼 라운드넥 가디건 (7 COLOR)
+                  </div>
+                  <div class="price">
+                    <span class="discount">20%</span>
+                    <span class="price-value">53,800원</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="클래식 블레이저"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">후브스</div>
+                  <div class="product-name">클래식 블레이저</div>
+                  <div class="price">78,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="리브드 크루넥 니트"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">비버리힐스 폴로클럽</div>
+                  <div class="product-name">리브드 크루넥 니트</div>
+                  <div class="price">
+                    <span class="discount">22%</span>
+                    <span class="price-value">45,600원</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 가디건"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 가디건</div>
+                  <div class="price">62,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="헨리넥 롱슬리브"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">헨리넥 롱슬리브</div>
+                  <div class="price">38,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 가디건 2"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 가디건 2</div>
+                  <div class="price">55,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="헨리넥 롱슬리브 2"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">헨리넥 롱슬리브 2</div>
+                  <div class="price">42,000원</div>
+                </div>
+              </div>
+
+              <!-- Additional cards for first row to reach 15 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 9"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 제품 9</div>
+                  <div class="price">48,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 10"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 제품 10</div>
+                  <div class="price">52,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 11"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 제품 11</div>
+                  <div class="price">46,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-7a8ca5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 12"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 제품 12</div>
+                  <div class="price">41,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 13"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 제품 13</div>
+                  <div class="price">58,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 14"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 제품 14</div>
+                  <div class="price">49,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 제품 15"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 제품 15</div>
+                  <div class="price">53,000원</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="product-row">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 1"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 1</div>
+                  <div class="price">44,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 2"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 2</div>
+                  <div class="price">51,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 3"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 3</div>
+                  <div class="price">47,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 4"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 4</div>
+                  <div class="price">43,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 5"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 5</div>
+                  <div class="price">56,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 6"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 6</div>
+                  <div class="price">49,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 7"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 7</div>
+                  <div class="price">53,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 8"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 8</div>
+                  <div class="price">36,000원</div>
+                </div>
+              </div>
+
+              <!-- Additional cards for second row to reach 15 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 9"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 9</div>
+                  <div class="price">42,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 10"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 10</div>
+                  <div class="price">38,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 11"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 11</div>
+                  <div class="price">45,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 12"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 12</div>
+                  <div class="price">52,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 13"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 13</div>
+                  <div class="price">48,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 14"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 브랜드</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 14</div>
+                  <div class="price">41,000원</div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="미니멀 두번째 줄 제품 15"
+                  />
+                  <button class="like-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 17.5L8.5 16.1C3.5 11.6 0 8.5 0 4.5C0 2 2 0 4.5 0C6 0 7.5 0.8 8.5 2C9.5 0.8 11 0 12.5 0C15 0 17 2 17 4.5C17 8.5 13.5 11.6 8.5 16.1L10 17.5Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-info">
+                  <div class="brand">미니멀 스타일</div>
+                  <div class="product-name">미니멀 두번째 줄 제품 15</div>
+                  <div class="price">39,000원</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="scroll-btn scroll-right" id="scrollRight2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

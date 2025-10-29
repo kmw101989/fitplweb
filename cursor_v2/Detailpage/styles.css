@@ -1,0 +1,702 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  background-color: #fafafa;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* Top Bar Styles */
+.topbar {
+  width: 1440px;
+  height: 56px;
+  background-color: #7a8ca5;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.topbar-background {
+  background-color: #7a8ca5;
+  width: 100%;
+  height: 100%;
+}
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.margin-divider {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 15.25px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 0 8px;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.snap-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15.25px;
+  font-weight: 500;
+}
+
+.snap-icon {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.category-menu-btn {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.store-link,
+.search-btn,
+.like-link,
+.my-link,
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13.125px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.search-icon,
+.like-icon,
+.my-icon,
+.cart-icon {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+}
+
+.logout-btn {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12.1875px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Main Container */
+.main-container {
+  margin-top: 56px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 240px;
+  background-color: rgb(255, 255, 255);
+  min-height: calc(100vh - 56px);
+}
+
+/* Page Header */
+.page-header {
+  background-color: #f5f5f5;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.1);
+}
+
+.page-header h1 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
+  font-family: "Pretendard", sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720"><rect width="600" height="720" fill="%23E0E0E0"/><text x="300" y="360" text-anchor="middle" font-size="24" fill="%23999">후쿠오카 거리 이미지</text></svg>');
+  background-size: cover;
+  background-position: center;
+  height: 720px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 24px 40px;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 50px;
+  margin-bottom: 24px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.location-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 12px 24px;
+  background: rgb(245, 245, 245);
+}
+
+.location-tag {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+}
+
+.location-tag:not(.active) {
+  border-color: #cccccc;
+  color: #666666;
+  font-weight: 500;
+}
+
+.location-tag:hover {
+  background-color: #f5f5f5;
+}
+
+/* Section Tabs */
+.section-tabs {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+  border-right: none;
+}
+
+.tab-btn:last-child {
+  border-right: none;
+}
+
+.tab-btn.active {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  color: #000000;
+  font-weight: 700;
+}
+
+.tab-btn:hover:not(.active) {
+  background-color: transparent;
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 6px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.section-header p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 12px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666666;
+  font-family: "Pretendard", sans-serif;
+}
+
+.refresh-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Weather Section */
+.weather-section {
+  background-color: rgb(245, 245, 245);
+  padding: 0 24px 24px 24px;
+  margin-bottom: 16px;
+}
+
+/* Snap Section */
+.snap-section {
+  background-color: rgb(245, 245, 245);
+  padding: 0 24px 24px 24px;
+  margin-bottom: 16px;
+}
+
+.weather-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.weather-tag {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #666666;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+}
+
+.weather-tag.active {
+  border-color: #000000;
+  color: #000000;
+  font-weight: 700;
+}
+
+.weather-tag:hover:not(.active) {
+  border-color: #000000;
+}
+
+/* Snap Tags */
+.snap-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.snap-tag {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #666666;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+}
+
+.snap-tag.active {
+  border-color: #000000;
+  color: #000000;
+  font-weight: 700;
+}
+
+.snap-tag:hover:not(.active) {
+  border-color: #000000;
+}
+
+/* Activity Section */
+.activity-section {
+  background-color: rgb(245, 245, 245);
+  padding: 0 24px 24px 24px;
+  margin-bottom: 16px;
+}
+
+.activity-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.activity-tag {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #666666;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+}
+
+.activity-tag.active {
+  border-color: #000000;
+  color: #000000;
+  font-weight: 700;
+}
+
+.activity-tag:hover:not(.active) {
+  border-color: #000000;
+}
+
+/* Photo Section */
+.photo-section {
+  background-color: rgb(245, 245, 245);
+  padding: 0 24px 24px 24px;
+  margin-bottom: 16px;
+}
+
+/* Local Mood Section */
+.local-mood-section {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 24px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="%23E0E0E0"/><text x="100" y="100" text-anchor="middle" font-size="14" fill="%23999">상품 이미지</text></svg>');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.like-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.product-info {
+  padding: 12px;
+}
+
+.brand {
+  font-size: 11px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 6px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.product-name {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 8px;
+  line-height: 18px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.coupon {
+  background-color: rgba(36, 94, 255, 0.1);
+  color: #245eff;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 400;
+  display: inline-block;
+  font-family: "Pretendard", sans-serif;
+}
+
+/* More Button */
+.more-btn {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.more-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Service Section */
+.service-section {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.service-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 16px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.service-links {
+  display: flex;
+  gap: 16px;
+}
+
+.service-link {
+  flex: 1;
+  height: 143px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="568" height="143" viewBox="0 0 568 143"><rect width="568" height="143" fill="%23E0E0E0"/><text x="284" y="72" text-anchor="middle" font-size="16" fill="%23999">서비스 이미지</text></svg>');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Expert Section */
+.expert-section {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.expert-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 16px;
+  font-family: "Pretendard", sans-serif;
+}
+
+.expert-links {
+  display: flex;
+  gap: 16px;
+}
+
+.expert-link {
+  flex: 1;
+  height: 143px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="568" height="143" viewBox="0 0 568 143"><rect width="568" height="143" fill="%23E0E0E0"/><text x="284" y="72" text-anchor="middle" font-size="16" fill="%23999">전문관 이미지</text></svg>');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .topbar {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  .main-container {
+    width: 100%;
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 24px;
+  }
+
+  .topbar-container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .topbar-right {
+    gap: 8px;
+  }
+
+  .store-link span,
+  .search-btn span,
+  .like-link span,
+  .my-link span,
+  .cart-link span {
+    display: none;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .location-tags {
+    gap: 6px;
+  }
+
+  .location-tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .service-links,
+  .expert-links {
+    flex-direction: column;
+  }
+
+  .service-link,
+  .expert-link {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0 16px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .section-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    flex: 1;
+    min-width: 0;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .weather-tags,
+  .activity-tags,
+  .snap-tags {
+    gap: 6px;
+  }
+
+  .weather-tag,
+  .activity-tag,
+  .snap-tag {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* Additional Styling for Better UX */
+
+.tab-btn,
+.weather-tag,
+.activity-tag,
+.location-tag {
+  transition: all 0.2s ease;
+}
