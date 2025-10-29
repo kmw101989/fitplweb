@@ -1,0 +1,26 @@
+{
+  "name": "fitplweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmw101989/fitplweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmw101989/fitplweb/issues"
+  },
+  "homepage": "https://github.com/kmw101989/fitplweb#readme",
+  "dependencies": {
+    "mysql2": "^3.15.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^23.9.5"
+  }
+}
