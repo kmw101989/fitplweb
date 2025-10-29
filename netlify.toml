@@ -1,11 +1,15 @@
 # netlify.toml  (리포 루트)
 [build]
-  command = ""                 # 빌드 과정이 없으면 빈 값/생략
-  publish = "."                # 루트 전체를 배포해서 하위 폴더들을 그대로 노출
+  # 정적 사이트면 별도 빌드 커맨드가 없다면 비워둬도 OK
+  publish = "."
 
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
+  external_node_modules = ["mysql2"]
+
+[build.environment]
+  NODE_VERSION = "20"
 
 # --- 메인 랜딩: /  -> mainpage-website/index.html
 [[redirects]]
