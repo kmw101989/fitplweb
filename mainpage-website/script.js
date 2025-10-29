@@ -153,6 +153,10 @@ class NavigationHandler {
     // Top navigation links
     this.navLinks.forEach((link) => {
       link.addEventListener("click", (e) => {
+        // FITPL 링크는 기본 동작 허용
+        if (link.textContent.trim() === "FITPL") {
+          return; // 기본 링크 동작 허용
+        }
         e.preventDefault();
         console.log("네비게이션 클릭:", link.textContent);
       });
