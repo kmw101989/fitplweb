@@ -76,6 +76,17 @@
   to = "/fitpl-website/index.html"
   status = 200
 
+# --- 정적 파일 헤더 설정
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
 # --- 서버리스 API (예: /.netlify/functions/hello)
 # 별도 설정 불필요. netlify/functions/hello.mjs 파일만 있으면
 # /.netlify/functions/hello 로 자동 라우팅됨.
