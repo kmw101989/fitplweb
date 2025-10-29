@@ -13,6 +13,17 @@
   to = "/mainpage-website/index.html"
   status = 200
 
+# --- 정적 파일 직접 서빙
+[[redirects]]
+  from = "/styles.css"
+  to = "/mainpage-website/styles.css"
+  status = 200
+
+[[redirects]]
+  from = "/script.js"
+  to = "/mainpage-website/script.js"
+  status = 200
+
 # --- 개별 섹션: 정적 파일 직접 제공
 #    SPA면 index.html로 고정 라우팅(200) / 정적만이면 301/200 혼합 가능
 
