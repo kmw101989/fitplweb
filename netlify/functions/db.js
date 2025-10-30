@@ -11,10 +11,17 @@ export async function handler() {
       ssl: false,
     });
 
-    const [rows] = await conn.query(
-      "SELECT product_id, product_name, price FROM products LIMIT 10"
-    );
-    await conn.end();
+    const [rows] = await conn.query(`
+      SELECT table_name 
+      FROM information_schema.tables 
+      WHERE table_schema = DATABASE()
+      ORDER BY table_name
+      LIMIT 50
+    `);
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ ok: true, tables: rows }),
+    };
 
     return {
       statusCode: 200,
