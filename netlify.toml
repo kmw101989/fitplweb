@@ -1,104 +1,91 @@
-# netlify.toml  (리포 루트)
+# netlify.toml (repo root)
+
 [build]
-  # 정적 사이트면 별도 빌드 커맨드가 없다면 비워둬도 OK
-  publish = "."
+  publish   = "mainpage-website"      # index.html 있는 폴더
+  functions = "netlify/functions"     # 함수 폴더 위치
 
 [dev]
-  functions = "netlify/functions"
   framework = "#static"
+  port      = 8888
+  functions = "netlify/functions"
 
 [functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
+  node_bundler          = "esbuild"
   external_node_modules = ["mysql2"]
-  functions = "netlify/functions"
-  framework = "#static"
-  port = 8888
 
 [build.environment]
   NODE_VERSION = "20"
 
-# --- 메인 랜딩: /  -> mainpage-website/index.html
+# ------ 라우팅/헤더 (필요하면 유지) ------
 [[redirects]]
   from = "/"
-  to = "/mainpage-website/index.html"
+  to   = "/mainpage-website/index.html"
   status = 200
 
-# --- 정적 파일 직접 서빙
 [[redirects]]
   from = "/styles.css"
-  to = "/mainpage-website/styles.css"
+  to   = "/mainpage-website/styles.css"
   status = 200
 
 [[redirects]]
   from = "/script.js"
-  to = "/mainpage-website/script.js"
+  to   = "/mainpage-website/script.js"
   status = 200
 
-# --- 개별 섹션: 정적 파일 직접 제공
-#    SPA면 index.html로 고정 라우팅(200) / 정적만이면 301/200 혼합 가능
-
-# /ranking ... (SPA 라우팅 가정)
-[[redirects]]
+[[redirects]]  # ranking
   from = "/ranking"
-  to = "/ranking/index.html"
+  to   = "/ranking/index.html"
   status = 200
 [[redirects]]
   from = "/ranking/*"
-  to = "/ranking/index.html"
+  to   = "/ranking/index.html"
   status = 200
 
-# /sale ...
-[[redirects]]
+[[redirects]]  # sale
   from = "/sale"
-  to = "/sale/index.html"
+  to   = "/sale/index.html"
   status = 200
 [[redirects]]
   from = "/sale/*"
-  to = "/sale/index.html"
+  to   = "/sale/index.html"
   status = 200
 
-# /Detail ...
-[[redirects]]
+[[redirects]]  # Detail
   from = "/Detail"
-  to = "/Detail/index.html"
+  to   = "/Detail/index.html"
   status = 200
 [[redirects]]
   from = "/Detail/*"
-  to = "/Detail/index.html"
+  to   = "/Detail/index.html"
   status = 200
 
-# /Detailpage ...
-[[redirects]]
+[[redirects]]  # Detailpage
   from = "/Detailpage"
-  to = "/Detailpage/index.html"
+  to   = "/Detailpage/index.html"
   status = 200
 [[redirects]]
   from = "/Detailpage/*"
-  to = "/Detailpage/index.html"
+  to   = "/Detailpage/index.html"
   status = 200
 
-# /cart ...
-[[redirects]]
+[[redirects]]  # cart
   from = "/cart"
-  to = "/cart/index.html"
+  to   = "/cart/index.html"
   status = 200
 [[redirects]]
   from = "/cart/*"
-  to = "/cart/index.html"
+  to   = "/cart/index.html"
   status = 200
 
-# /fitpl-website ...
-[[redirects]]
+[[redirects]]  # fitpl-website
   from = "/fitpl-website"
-  to = "/fitpl-website/index.html"
+  to   = "/fitpl-website/index.html"
   status = 200
 [[redirects]]
   from = "/fitpl-website/*"
-  to = "/fitpl-website/index.html"
+  to   = "/fitpl-website/index.html"
   status = 200
 
-# --- 정적 파일 헤더 설정
 [[headers]]
   for = "*.css"
   [headers.values]
@@ -108,7 +95,3 @@
   for = "*.js"
   [headers.values]
     Content-Type = "application/javascript"
-
-# --- 서버리스 API (예: /.netlify/functions/hello)
-# 별도 설정 불필요. netlify/functions/hello.mjs 파일만 있으면
-# /.netlify/functions/hello 로 자동 라우팅됨.
