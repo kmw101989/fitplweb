@@ -11,7 +11,9 @@ export async function handler() {
       ssl: false,
     });
 
-    const [rows] = await conn.query('SELECT product_id, product_name, price FROM products LIMIT 10');
+    const [rows] = await conn.query(
+      "SELECT product_id, product_name, price FROM products LIMIT 10"
+    );
     await conn.end();
 
     return {
